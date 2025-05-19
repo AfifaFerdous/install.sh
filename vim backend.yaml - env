@@ -1,0 +1,9 @@
+env:
+   - name: MYSQL_HOST
+    value: "mysql.default.svc.cluster.local"
+   - name: MYSQL_USER
+    value: "secureuser"
+   - name: MYSQL_PASSWORD
+    value: "very-secure-password"
+   - name: MYSQL_DB
+    value: "twotierbackenddb"

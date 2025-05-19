@@ -1,1 +1,1 @@
-# install.sh
+# EKS (Best Practices) 

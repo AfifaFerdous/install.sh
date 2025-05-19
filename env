@@ -1,0 +1,9 @@
+env:
+   - name: MYSQL_HOST
+    value: "mysql-svc.mysql.svc.cluster.local"
+   - name: MYSQL_USER
+    value: "ffmuser"
+   - name: MYSQL_PASSWORD
+    value: "my-secret-pw"
+   - name: MYSQL_DB
+    value: "twotier"

@@ -18,8 +18,16 @@ spec:
         app: backend
     spec:
       containers:
-        - image: hmsmiraz/n-tier-backend:v1
+        - image: afifaferdous/ntier-backend:v1
           name: n-tier-backend
+          ports:
+            - containerPort: 5000
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 20
+            periodSeconds: 10
           resources:
             requests:
               memory: "50Mi"

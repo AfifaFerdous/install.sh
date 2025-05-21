@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - image: afifaferdous/ntier-backend:v1
-          name: n-tier-backend
+          name: ntier-backend
           ports:
             - containerPort: 5000
           livenessProbe:

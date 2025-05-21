@@ -1,9 +1,31 @@
-env:
-   - name: MYSQL_HOST
-    value: "mysql.default.svc.cluster.local"
-   - name: MYSQL_USER
-    value: "secureuser"
-   - name: MYSQL_PASSWORD
-    value: "very-secure-password"
-   - name: MYSQL_DB
-    value: "twotierbackenddb"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: backend
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: backend
+    spec:
+      containers:
+      - image: afifaferdous/ntier-backend:v1
+        name: ntier-backend
+        env:
+          - name: MYSQL_HOST
+            value: "mysql.default.svc.cluster.local"
+          - name: MYSQL_USER
+            value: "secureuser"
+          - name: MYSQL_PASSWORD
+            value: "very-secure-password"
+          - name: MYSQL_DB
+            value: "twotierbackenddb"

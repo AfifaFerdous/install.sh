@@ -10,10 +10,9 @@ nodeGroups:
     instanceType: t2.medium
     desiredCapacity: 3
     volumeSize: 20
+
 iam:
   withOIDC: true
 
 addons:
   - name: aws-ebs-csi-driver
-    wellKnownPolicies: 
-    ebsController: true

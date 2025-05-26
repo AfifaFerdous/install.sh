@@ -1,0 +1,9 @@
+image:
+  backend:
+    repository: afifaferdous/ntier-backend
+    tag: v1
+  frontend:
+    repository: afifaferdous/ntier-frontend
+    tag: v1
+
+ 

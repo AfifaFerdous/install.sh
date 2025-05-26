@@ -1,3 +1,4 @@
+replicaCount: 1
 image:
   backend:
     repository: afifaferdous/ntier-backend
@@ -5,5 +6,3 @@ image:
   frontend:
     repository: afifaferdous/ntier-frontend
     tag: v1
-
- 
